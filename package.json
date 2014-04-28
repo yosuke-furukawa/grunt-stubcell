@@ -4,7 +4,7 @@
   "description": "grunt tool for stubcell",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "expect.js": "^0.3.1",
     "grunt": "^0.4.4",
-    "grunt-mocha-test": "^0.10.2"
+    "grunt-mocha-test": "^0.10.2",
+    "mocha": "^1.18.2"
   }
 }
