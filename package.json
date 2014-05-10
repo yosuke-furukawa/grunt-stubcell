@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/yosuke-furukawa/grunt-stubcell",
   "dependencies": {
-    "stubcell": "^0.1.4"
+    "stubcell": "^0.2.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",

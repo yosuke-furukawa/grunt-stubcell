@@ -35,6 +35,9 @@ grunt.loadNpmTasks('grunt-stubcell');
       test: {
         // entry yaml path
         entry: "entry.yaml",
+        // base response data path
+        // if empty, basepath is same to entry.yaml dir
+        basepath: "",
         // port settings
         port: 3000
       }
