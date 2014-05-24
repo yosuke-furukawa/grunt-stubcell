@@ -4,6 +4,7 @@ var defaults = {
   basepath : "",
   port  : 3000,
   keepalive : false,
+  record : {},
 };
 module.exports = function(grunt) {
   "use strict";
@@ -16,8 +17,13 @@ module.exports = function(grunt) {
     var basepath = this.data.basepath || defaults.basepath;
     var port = this.data.port || defaults.port;
     var keepalive = this.data.keepalive || defaults.keepalive;
+    var record = this.data.record || defaults.record;
+    var debug = this.data.debug ? true : grunt.verbose;
 
-    stubcell.loadEntry(entry, basepath);
+    stubcell.loadEntry(entry, {
+      debug: debug,
+      record : record
+    });
     var server = stubcell.server();
     if (!keepalive) {
       done();

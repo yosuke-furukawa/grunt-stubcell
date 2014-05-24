@@ -6,6 +6,10 @@ module.exports = function(grunt) {
       test: {
         entry: "test/fixture/entry.yaml",
         port: 3000,
+        record: {
+          debug: true,
+          proxy: "http://echo.jsontest.com"
+        },
       }
     },
     mochaTest: {
