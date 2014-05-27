@@ -1,6 +1,6 @@
 {
   "name": "grunt-stubcell",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "grunt tool for stubcell",
   "main": "index.js",
   "scripts": {
