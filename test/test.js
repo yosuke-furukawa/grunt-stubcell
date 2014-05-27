@@ -28,7 +28,7 @@ describe('test http request', function () {
       res.on("end", function() {
         var jsonData = JSON.parse(data);
         expect(jsonData.hello).to.equal("world");
-        fs.readFile("test/fixture/hello/world.json", function(err, data) {
+        fs.readFile("test/fixture/hello/world_get.json", function(err, data) {
           expect(JSON.parse(""+data).hello).to.equal("world");
         });
         done();
