@@ -5,6 +5,7 @@ var defaults = {
   port  : 3000,
   keepalive : false,
   record : {},
+  looseCompare : false,
 };
 module.exports = function(grunt) {
   "use strict";
@@ -19,10 +20,12 @@ module.exports = function(grunt) {
     var keepalive = this.data.keepalive || defaults.keepalive;
     var record = this.data.record || defaults.record;
     var debug = this.data.debug ? true : grunt.verbose;
+    var looseCompare = this.data.looseCompare ? true : defaults.looseCompare;
 
     stubcell.loadEntry(entry, {
       debug: debug,
-      record : record
+      record : record,
+      looseCompare: looseCompare,
     });
     var server = stubcell.server();
     if (!keepalive) {
