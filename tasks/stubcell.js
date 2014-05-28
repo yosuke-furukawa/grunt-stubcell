@@ -25,6 +25,7 @@ module.exports = function(grunt) {
     stubcell.loadEntry(entry, {
       debug: debug,
       record : record,
+      basepath : basepath,
       looseCompare: looseCompare,
     });
     var server = stubcell.server();
