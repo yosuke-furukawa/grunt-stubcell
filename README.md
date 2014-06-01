@@ -112,7 +112,6 @@ grunt.initConfig({
   }
 });
 grunt.loadNpmTasks('grunt-stubcell');
-grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-connect');
 grunt.loadNpmTasks('grunt-connect-proxy');
 
