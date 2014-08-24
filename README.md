@@ -43,7 +43,7 @@ grunt.loadNpmTasks('grunt-stubcell');
         // record json settings
         record: {
           // backend server for record json
-          proxy : "http://echo.jsontest.com",
+          target : "http://echo.jsontest.com",
           // json store directory
           basepath : "",
           // debug print
@@ -102,7 +102,7 @@ grunt.initConfig({
       // record json settings
       record: {
         // backend server for record json
-        proxy : "http://echo.jsontest.com",
+        target : "http://echo.jsontest.com",
         // json store directory
         basepath : "",
         // debug print

@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         port: 3000,
         record: {
           debug: true,
-          proxy: "http://echo.jsontest.com"
+          target: "http://echo.jsontest.com"
         },
       }
     },
